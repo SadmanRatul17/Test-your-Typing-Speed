@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,8 +15,36 @@
     <a class="page" href="index.html">Home</a>
     <a class="page" href="blog.html">Blog</a>
   </head>
-</head>
-<body>
-    
-</body>
+  <body>
+    <h2 class="blog">Blog</h2>
+    <hr />
+
+    <section class="question">
+      <div class="margin">
+        <h3>Q.1 : local storage vs session storage?</h3>
+        <span class="bold">Ans:</span>
+        localStorage and sessionStorage are almost identical and have the same
+        API. The difference is that with sessionStorage , the data is persisted
+        only until the window or tab is closed. With localStorage , the data is
+        persisted until the user manually clears the browser cache or until your
+        web app clears the data
+      </div>
+      <div class="margin">
+        <h3>Q.2 : global scope and block scope?</h3>
+        <span class="bold">Ans:</span>
+        In a browser environment, the global scope is controlled by the window
+        object while in Node. js, it's controlled by the global object. Block
+        scopes are what you get when you use if statements, for statements, and
+        the like.
+      </div>
+      <div class="margin">
+        <h3>Q.3 : How does the Event Loop works in JavaScript?</h3>
+        <span class="bold">Ans:</span>
+        The event loop is a process that waits for the Call Stack to be clear
+        before pushing callbacks from the Task Queue to the Call Stack. Once the
+        Stack is clear, the event loop triggers and checks the Task Queue for
+        available callbacks.
+      </div>
+    </section>
+  </body>
 </html>
