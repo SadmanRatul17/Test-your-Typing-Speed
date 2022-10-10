@@ -41,6 +41,8 @@ const typeController = (e) => {
   userText += newLetter;
 
   const newLetterCorrect = validate(newLetter);
+  
+  
 
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
@@ -56,6 +58,7 @@ const typeController = (e) => {
 
 const validate = (key) => {
   if (key === questionText[userText.length - 1]) {
+   
     return true;
   }
   return false;
@@ -86,6 +89,7 @@ const gameOver = () => {
   `;
 
   addHistory(questionText, timeTaken, errorCount);
+  
 
   // restart everything
   startTime = null;

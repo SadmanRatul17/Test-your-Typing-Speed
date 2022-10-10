@@ -3,6 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+.page{
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right:20px ;
+}
 
 body {
   background-image: url("./bg.png");
