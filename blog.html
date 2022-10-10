@@ -21,16 +21,18 @@
 
     <section class="question">
       <div class="margin">
-        <h3>Q.1 : local storage vs session storage?</h3>
+        <h2>Q.1 : local storage vs session storage?</h2>
+
         <span class="bold">Ans:</span>
+
         localStorage and sessionStorage are almost identical and have the same
         API. The difference is that with sessionStorage , the data is persisted
         only until the window or tab is closed. With localStorage , the data is
         persisted until the user manually clears the browser cache or until your
-        web app clears the data
+        web app clears the data.
       </div>
       <div class="margin">
-        <h3>Q.2 : global scope and block scope?</h3>
+        <h2>Q.2 : global scope and block scope?</h2>
         <span class="bold">Ans:</span>
         In a browser environment, the global scope is controlled by the window
         object while in Node. js, it's controlled by the global object. Block
@@ -38,12 +40,20 @@
         the like.
       </div>
       <div class="margin">
-        <h3>Q.3 : How does the Event Loop works in JavaScript?</h3>
+        <h2>Q.3 : How does the Event Loop works in JavaScript?</h2>
         <span class="bold">Ans:</span>
         The event loop is a process that waits for the Call Stack to be clear
         before pushing callbacks from the Task Queue to the Call Stack. Once the
         Stack is clear, the event loop triggers and checks the Task Queue for
         available callbacks.
+      </div>
+      <div class="margin">
+        <h2>Q.4 : how we can get undefined in javascript?</h2>
+        <span class="bold">Ans:</span>
+        You will get undefined value when you call a non-existent property or
+        method of an object. In the above example, a function Sum does not
+        return any result but still we try to assign its resulted value to a
+        variable. So in this case, result will be undefined.
       </div>
     </section>
   </body>
